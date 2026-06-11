@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "yoavbls.pretty-ts-errors",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "wix.vscode-import-cost",
+    "PKief.material-icon-theme",
+    "usernamehw.errorlens",
+    "naumovs.color-highlight",
+    "mikestead.dotenv"
+  ],
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "Offcourt Social",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "window.title": "Offcourt Social — ${activeEditorShort}${separator}${rootName}"
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "bradlc.vscode-tailwindcss",
+      "yoavbls.pretty-ts-errors",
+      "formulahendry.auto-rename-tag",
+      "PKief.material-icon-theme",
+      "usernamehw.errorlens"
+    ]
+  }
+}
