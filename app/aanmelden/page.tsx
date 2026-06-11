@@ -302,7 +302,7 @@ export default function AanmeldenPage() {
                 <div className="border-t border-cream/10 pt-10">
                   <p className="eyebrow text-cream/40 text-[10px] mb-6">Wat je kunt verwachten</p>
                   <ul className="space-y-3">
-                    {['Rackets & rallies', 'Gaming', 'BBQ by Mandja Grill', 'Drinks', 'Good people'].map((item) => (
+                    {['Rackets & rallies', 'Gaming', 'BBQ by Mandja Grill', 'Drinks', 'Music', 'Good vibes'].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-cream/70 text-[13px] tracking-wide">
                         <span className="w-1 h-1 rounded-full bg-moss shrink-0" />
                         {item}
