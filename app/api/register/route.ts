@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
   try {
     const { naam, email, leeftijd, telefoon } = await req.json();
@@ -10,6 +8,8 @@ export async function POST(req: NextRequest) {
     if (!naam || !email || !leeftijd || !telefoon) {
       return NextResponse.json({ error: 'Alle velden zijn verplicht.' }, { status: 400 });
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
       from: 'Offcourt Social <onboarding@resend.dev>',
