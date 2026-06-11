@@ -59,10 +59,10 @@ function emailTemplate({
             <tr><td style="padding:24px 28px;">
               <p style="margin:0 0 18px;color:#6F7D5C;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;">Evenement</p>
               ${row('Datum', 'Sunday, 5 July 2026')}
-              ${row('Tijd', '14:00 — 20:00')}
+              ${row('Tijd', '17:00 — 21:00')}
               ${row('Locatie', 'Rive Club Padel, Capelle a/d IJssel')}
               ${row('Adres', 'Rivium 3e straat 7, 2909 LH')}
-              ${row('Deelname', '€5', true)}
+              ${row('Deelname', 'Gratis', true)}
             </td></tr>
           </table>
         </td></tr>

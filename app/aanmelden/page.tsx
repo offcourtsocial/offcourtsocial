@@ -241,11 +241,10 @@ export default function AanmeldenPage() {
             <p className="text-cream/60 text-[15px] md:text-[16px] leading-[1.75]">
               Offcourt Social is een event dat mensen samenbrengt in de juiste sfeer.
               Padel, muziek, eten en een community die verder gaat dan het veld.
-              De eerste editie is op <strong className="text-cream/90 font-medium">5 juli 2026</strong> in Rotterdam.
-              Toegang €5 —{' '}
+              Op <strong className="text-cream/90 font-medium">5 juli 2026</strong> in Rotterdam. Gratis toegang.{' '}
               <a href="#aanmelden" className="text-cream underline underline-offset-4 decoration-cream/30 hover:decoration-cream transition-all duration-300">
-                meld je aan en reserveer je plek
-              </a>.
+                Meld je aan en reserveer je plek.
+              </a>
             </p>
           </Reveal>
         </div>
@@ -285,7 +284,7 @@ export default function AanmeldenPage() {
                     </li>
                     <li className="flex items-center gap-4">
                       <IconClock />
-                      <span className="tracking-[0.12em] uppercase">14:00 — 20:00</span>
+                      <span className="tracking-[0.12em] uppercase">17:00 — 21:00</span>
                     </li>
                     <li className="flex items-center gap-4">
                       <IconPin />
@@ -293,7 +292,7 @@ export default function AanmeldenPage() {
                     </li>
                     <li className="flex items-center gap-4">
                       <IconTicket />
-                      <span className="tracking-[0.12em] uppercase">€5</span>
+                      <span className="tracking-[0.12em] uppercase">Gratis</span>
                     </li>
                   </ul>
                 </Reveal>
@@ -351,7 +350,7 @@ export default function AanmeldenPage() {
                     </button>
 
                     <p className="text-cream/30 text-[11px] text-center leading-relaxed">
-                      Limited spots available. Toegang €5.
+                      Limited spots available. Gratis toegang.
                     </p>
                   </form>
                 </Reveal>
@@ -393,7 +392,7 @@ function SuccessView({ naam }: { naam: string }) {
         Tot dan,<br />{naam}.
       </h2>
       <p className="mt-6 text-cream/55 text-[14px] leading-relaxed max-w-sm">
-        Check je inbox — we sturen je een bevestiging met alle details van de eerste editie.
+        Check je inbox — we sturen je een bevestiging met alle details.
       </p>
       <div className="mt-10 border-t border-cream/8 pt-8">
         <p className="eyebrow text-cream/35 text-[10px] mb-4">5 Juli 2026 · Rive Club Padel · Capelle a/d IJssel</p>
