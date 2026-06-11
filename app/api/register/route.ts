@@ -11,11 +11,16 @@ export async function POST(req: NextRequest) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
+    // Stuur alleen admin-notificatie totdat domein geverifieerd is
     await resend.emails.send({
       from: 'Offcourt Social <onboarding@resend.dev>',
-      to: email,
-      subject: 'Aanmelding bevestigd — Offcourt Social Padel & Vibes',
-      html: emailTemplate({ naam, leeftijd: String(leeftijd), telefoon }),
+      to: 'info@offcourtsocial.com',
+      subject: `Nieuwe aanmelding: ${naam}`,
+      html: `<p><strong>Naam:</strong> ${naam}</p>
+             <p><strong>E-mail:</strong> ${email}</p>
+             <p><strong>Leeftijd:</strong> ${leeftijd}</p>
+             <p><strong>Telefoon:</strong> ${telefoon}</p>
+             <p><strong>Datum:</strong> ${new Date().toLocaleString('nl-NL')}</p>`,
     });
 
     return NextResponse.json({ success: true });
