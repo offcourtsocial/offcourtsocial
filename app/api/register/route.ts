@@ -9,19 +9,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Alle velden zijn verplicht.' }, { status: 400 });
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    // Stuur alleen admin-notificatie totdat domein geverifieerd is
-    await resend.emails.send({
-      from: 'Offcourt Social <onboarding@resend.dev>',
-      to: 'info@offcourtsocial.com',
-      subject: `Nieuwe aanmelding: ${naam}`,
-      html: `<p><strong>Naam:</strong> ${naam}</p>
-             <p><strong>E-mail:</strong> ${email}</p>
-             <p><strong>Leeftijd:</strong> ${leeftijd}</p>
-             <p><strong>Telefoon:</strong> ${telefoon}</p>
-             <p><strong>Datum:</strong> ${new Date().toLocaleString('nl-NL')}</p>`,
-    });
+    // Tijdelijk: log aanmelding tot domein geverifieerd is
+    console.log('AANMELDING', JSON.stringify({ naam, email, leeftijd, telefoon, datum: new Date().toISOString() }));
 
     return NextResponse.json({ success: true });
   } catch (err) {
