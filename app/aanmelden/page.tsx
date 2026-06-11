@@ -241,7 +241,7 @@ export default function AanmeldenPage() {
             <p className="text-cream/60 text-[15px] md:text-[16px] leading-[1.75]">
               Offcourt Social is een event dat mensen samenbrengt in de juiste sfeer.
               Padel, muziek, eten en een community die verder gaat dan het veld.
-              Op <strong className="text-cream/90 font-medium">5 juli 2026</strong> in Rotterdam. Gratis toegang.{' '}
+              Op <strong className="text-cream/90 font-medium">5 juli 2026</strong> in Rotterdam. RSVP toegang.{' '}
               <a href="#aanmelden" className="text-cream underline underline-offset-4 decoration-cream/30 hover:decoration-cream transition-all duration-300">
                 Meld je aan en reserveer je plek.
               </a>
@@ -292,7 +292,7 @@ export default function AanmeldenPage() {
                     </li>
                     <li className="flex items-center gap-4">
                       <IconTicket />
-                      <span className="tracking-[0.12em] uppercase">Gratis</span>
+                      <span className="tracking-[0.12em] uppercase">RSVP</span>
                     </li>
                   </ul>
                 </Reveal>
@@ -350,7 +350,7 @@ export default function AanmeldenPage() {
                     </button>
 
                     <p className="text-cream/30 text-[11px] text-center leading-relaxed">
-                      Limited spots available. Gratis toegang.
+                      Limited spots available. RSVP toegang.
                     </p>
                   </form>
                 </Reveal>
