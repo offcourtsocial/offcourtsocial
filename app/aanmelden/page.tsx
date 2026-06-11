@@ -232,7 +232,7 @@ export default function AanmeldenPage() {
       <section className="bg-ink border-t border-cream/5 py-20 md:py-28">
         <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-14 flex flex-col items-center text-center">
           <Reveal>
-            <span className="eyebrow text-moss text-[10px]">Offcourt Social — Launch</span>
+            <span className="eyebrow text-moss text-[10px]">Offcourt Social — Padel & Vibes</span>
             <h2 className="display-h text-cream text-[10vw] md:text-[7vw] lg:text-[5.5vw] xl:text-[4.5rem] leading-[0.92] mt-5">
               More than<br />a moment
             </h2>
@@ -272,7 +272,7 @@ export default function AanmeldenPage() {
                 <Reveal delay={1}>
                   <h2 className="display-condensed text-cream text-4xl md:text-5xl lg:text-[3.2rem] tracking-[0.02em] mt-6 leading-[0.98]">
                     Offcourt Social<br />
-                    <span className="text-moss">— Launch</span>
+                    <span className="text-moss">— Padel & Vibes</span>
                   </h2>
                 </Reveal>
 

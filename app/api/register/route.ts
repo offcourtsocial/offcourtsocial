@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: 'Offcourt Social <onboarding@resend.dev>',
       to: email,
-      subject: 'Aanmelding bevestigd — Offcourt Social Launch',
+      subject: 'Aanmelding bevestigd — Offcourt Social Padel & Vibes',
       html: emailTemplate({ naam, leeftijd: String(leeftijd), telefoon }),
     });
 
@@ -50,7 +50,7 @@ function emailTemplate({
           <p style="margin:0 0 6px;color:#6F7D5C;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;">Aanmelding bevestigd</p>
           <h1 style="margin:0 0 20px;color:#F2EFEA;font-size:38px;font-weight:400;letter-spacing:0.02em;text-transform:uppercase;line-height:1.05;">Tot dan,<br />${naam}.</h1>
           <p style="margin:0;color:rgba(242,239,234,0.6);font-size:14px;line-height:1.75;">
-            Je aanmelding voor Offcourt Social Launch is ontvangen.<br />We zien je graag op 5 juli in Capelle a/d IJssel.
+            Je aanmelding voor Offcourt Social Padel & Vibes is ontvangen.<br />We zien je graag op 5 juli in Capelle a/d IJssel.
           </p>
         </td></tr>
 
