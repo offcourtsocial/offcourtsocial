@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Anton, Bebas_Neue, Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 import GrainOverlay from '@/components/GrainOverlay';
+import { Analytics } from '@vercel/analytics/next';
 
 const anton = Anton({
   subsets: ['latin'],
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className="bg-ink text-cream antialiased">
         <GrainOverlay />
         {children}
+        <Analytics />
       </body>
     </html>
   );
