@@ -9,8 +9,12 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Alle velden zijn verplicht.' }, { status: 400 });
     }
 
-    // Tijdelijk: log aanmelding tot domein geverifieerd is
-    console.log('AANMELDING', JSON.stringify({ naam, email, leeftijd, telefoon, datum: new Date().toISOString() }));
+    // Sla aanmelding op in Google Sheets
+    await fetch('https://script.google.com/macros/s/AKfycbx2_k8BPJjfKxdhe9TnySIhq1cUwAvfTiol09UcQg59hGEclVDV_zZevWRXefw7I_3eeA/exec', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ naam, email, leeftijd, telefoon }),
+    });
 
     return NextResponse.json({ success: true });
   } catch (err) {
